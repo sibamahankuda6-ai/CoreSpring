@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="Airtel" class="org.example.entity.Airtel">
+        <property name="id" value="101"/>
+        <property name="name" value="Airtel Carrier"/>
+        <property name="usd" value="USDT707"/>
+    </bean>
+    <bean id="universityinfo" class="org.example.entity.University">
+        <property name="unmae" value="Centurion University"/>
+        <property name="ucode" value="CUTM-ODSIHA"/>
+    </bean>
+
+    <bean id="student1" class="org.example.entity.Student">
+        <property name="id" value="761018"/>
+        <property name="name" value="Siba mahankuda"/>
+        <property name="univ" ref="universityinfo" />
+
+    </bean>
+    <bean id="student2" class="org.example.entity.Student">
+        <property name="id" value="761001"/>
+        <property name="name" value="D.Krishna"/>
+        <property name="univ"  ref="universityinfo"/>
+
+    </bean>
+</beans>
