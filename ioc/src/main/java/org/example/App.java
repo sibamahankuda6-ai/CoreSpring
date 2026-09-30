@@ -17,6 +17,5 @@ public class App
         Student student2 =(Student)context.getBean("Student2");
         student1.dispayinfo();
         student2.dispayinfo();
-
     }
 }
